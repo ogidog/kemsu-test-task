@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70vw;
+    height: 60vh;
+
+    border: 0px solid red;
+}

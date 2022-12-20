@@ -1,0 +1,7 @@
+.container{
+    position: relative;
+
+    margin: 3px;
+
+    border: 1px solid gray;
+}
