@@ -1,2 +1,4 @@
 /.idea/
 /kemsu-test-task.iml
+/kemsu-test-task-frontend/node_modules/
+/kemsu-test-task-frontend/kemsu-test-task-frontend.iml
