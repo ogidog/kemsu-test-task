@@ -3,7 +3,7 @@ import Map from "./Map";
 
 import styles from "./MapContainer.module.css"
 
-const MapContainer = (props) => {
+const MapContainer = () => {
     return (
         <div className={styles.container}>
             <Map/>

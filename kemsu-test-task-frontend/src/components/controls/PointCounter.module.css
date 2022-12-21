@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+
+    width: 200px;
+    height: fit-content;
+
+    background-color: #eee7eb;
+
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+
+    font-size: 1.28rem;
+    font-family: "Candara Light";
+
+}
+.counter{
+    font-size: 1.9rem;
+    font-weight: bold;
+}

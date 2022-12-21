@@ -2,7 +2,9 @@
     position: relative;
 
     display: grid;
-    grid-template-rows: fit-content(30px) fit-content(40px);
+    grid-template-rows: fit-content(50px) fit-content(50px) fit-content(50px);
+    grid-template-columns: fit-content(200px);
+
     grid-row-gap: 10px;
 
     margin: 3px;

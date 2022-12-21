@@ -3,16 +3,17 @@
     display: flex;
     justify-content: space-evenly;
 
-    width: 80%;
+    width: 200px;
     height: 40px;
     line-height: 40px;
 
-    background-color: #eee7eb;
+    background-color: #ffffff;
 
     border-radius: 5px;
     border: 1px solid lightgrey;
 
     font-size: 1.28rem;
     font-family: "Candara Light";
-    font-weight: bolder;
+
+    cursor: pointer
 }
