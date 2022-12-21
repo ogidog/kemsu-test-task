@@ -1,5 +1,4 @@
 import L from "leaflet/dist/leaflet";
-import appStore from "../stores/AppStore";
 
 class ContourLayer {
 
