@@ -9,17 +9,22 @@ class AppStore {
         this.isDrawingPoint = false;
         this.contour = [];
         this.points = [];
-        this.numPointInContour = 0;
+        this.isClear = false;
 
         makeAutoObservable(this);
     }
 
     drawingPolygon(value) {
-        !this.isDrawingPoint && (this.isDrawingPolygon = value);
+        if (!this.isDrawingPoint) {
+            this.isDrawingPolygon = value;
+            this.contour = [];
+        }
+        this.isClear = false;
     }
 
     drawingPoint() {
         !this.isDrawingPolygon && (this.isDrawingPoint = !this.isDrawingPoint);
+        this.isClear = false
     }
 
     setContour(contourGeom) {
@@ -28,6 +33,14 @@ class AppStore {
 
     setPoint(pointGeom) {
         this.points.push(pointGeom);
+    }
+
+    setClear() {
+        this.isClear = true;
+        this.isDrawingPolygon = false;
+        this.isDrawingPoint = false;
+        this.contour = [];
+        this.points = [];
     }
 
     get countNumPointsInContour() {

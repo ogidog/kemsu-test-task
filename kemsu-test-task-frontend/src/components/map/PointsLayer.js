@@ -28,6 +28,9 @@ class PointsLayer {
         this.layerGroup.addLayer(layer);
         this.appStore.setPoint(this.getPointGeom(layer));
     }
+    clear(){
+        this.layerGroup.clearLayers();
+    }
 }
 
 export default PointsLayer;

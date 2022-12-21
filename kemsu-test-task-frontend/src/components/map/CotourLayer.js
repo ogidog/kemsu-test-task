@@ -24,7 +24,7 @@ class ContourLayer {
     }
 
     clear() {
-        if (this.appStore.isDrawingPolygon) {
+        if (this.appStore.isDrawingPolygon || this.appStore.isClear) {
             this.layerGroup.clearLayers();
         }
     }

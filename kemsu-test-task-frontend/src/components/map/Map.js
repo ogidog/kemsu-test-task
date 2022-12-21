@@ -7,6 +7,7 @@ import useDrawingPoint from "../custom-hooks/useDrawingPoint";
 import ContourLayer from "./CotourLayer";
 import {AppContext} from "../context/AppContext";
 import PointsLayer from "./PointsLayer";
+import useAllClear from "../custom-hooks/useAllClear";
 
 const Map = observer(() => {
 
@@ -67,6 +68,7 @@ const Map = observer(() => {
     }, []);
     useDrawingPolygon(contourLayerRef.current);
     useDrawingPoint(pointsLayerRef.current)
+    useAllClear(pointsLayerRef.current, contourLayerRef.current)
 
     return (
         <div id={"map"} style={{width: '100%', height: '100%', zIndex: 1}}></div>
