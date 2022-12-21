@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+
+  kemsu-test-task-frontend:
+    image: ogidog/kemsu-test-task-frontend
+    container_name: kemsu-test-task-frontend
+    networks:
+      kemsu-test-task-network:
+        aliases:
+          - test-task.kemsu.local
+    build:
+      context: ../
+      dockerfile: ./dockers/kemsu-test-task-frontend/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ".\\kemsu-test-task-frontend\\var\\log\\nginx:/var/log/nginx"
+
+networks:
+  kemsu-test-task-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.2.0/24"
+
